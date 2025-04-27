@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Popping', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height:100vh;
+    background: url(images/punk.jpg);
+    padding: 10px;
+}
+.todo-app h2 img {
+    width: 80px;
+    height: 70px;
+    margin-left: 3px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: rgb(38, 42, 44);
+    margin:100px auto 20px; 
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    border-color: rgb(215, 78, 101) ;
+    border-style:solid;
+}
+.todo-app h2 {
+    color:#fff;
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input {
+    flex: 1;
+    border: none;
+    outline:none;
+    background: transparent;
+    font-weight: 14px;
+}
+button {
+    border: none;
+    outline:none;
+    padding: 16px 50px;
+    background: rgb(215, 78, 101);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    color: #fff;
+    position:relative;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width:28px;
+    border-radius: 50%;
+    background-image:url(images/uncj-removebg-preview.png);
+    background-size:cover ;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image:url(images/gg-removebg-preview.png);
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    border-radius: px;
+}
+ul li span:hover {
+    background:grey;
+}
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .todo-app h2 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding-left: 45px;
+    }
+
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 10px;
+        left: 10px;
+    }
+}

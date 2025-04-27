@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dora</title>
+    <link rel="stylesheet" href="list.css" >
+    <link rel="shortcut icon" href="images/cion-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>Today List <img src = "images/listcion-removebg-preview.png" alt = ""></h2>
+            <div class="row">
+                <input type="text" id = "input-box" placeholder="Add your text">
+                <audio id="audioMusic">
+                    <source src="images/mixkit-arcade-game-jump-coin-216.wav" type="audio/wav">
+                </audio>
+                <button type="button" onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!--<li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>-->
+            </ul>
+        </div>
+    </div>
+    <script src="List.js"></script>
+</body>
+</html>
